@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>graph editor</title>
+</head>
+<body>
+    <div id="controls">
+        <select id="strokeStyleSelect">
+        <option value="red">red</option>
+        <option value="green">green</option>
+        <option value="blue">blue</option>
+        </select>
+        guidewire
+        <input type="checkbox" id="guidewireCheckbox" checked>
+        <input type="button" value="Erase all" id="eraseAllButton">
+        <label for="strokeStyleSelect">strokeStyle</label>
+    <select name="strokeStyleSelect" id="strokeStyleSelect">
+        <option value="red">red</option>
+        <option value="blue">blue</option>
+        <option value="yellow">yellow</option>
+    </select>
+    <input type="checkbox" id="fillCheckbox"><label for="fillCheckbox">fillCheckbox</label>
+    <input type="checkbox" id="editCheckbox"><label for="editCheckbox">edit </label>
+    <label for="fillStyle">fillStyle</label>
+    <select name="fillStyle" id="fillStyle">
+        <option value="orangle">orangle</option>
+        <option value="blue">blue</option>
+        <option value="yellow">yellow</option>
+    </select>
+    <label for="sidesSelect">sidesSelect</label>
+    <select name="sidesSelect" id="sidesSelect">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+    </div>
+    <canvas id="canvas" width="800" height="800"></canvas>
+</body>
+<script src="graph.js"></script>
+<style>
+    body {
+        background: #eee
+    }
+
+    #controls {
+        position: absoulte;
+        left: 25px;
+        top: 25px;
+    }
+    #canvas {
+        background: #fff;
+        cursor: pointer;
+        margin-left: 10px;
+        margin-top: 10px;
+        box-shadow: 4px 4px 8px rgba(0,0,0,0.4)
+    } 
+</style>
+</html>
